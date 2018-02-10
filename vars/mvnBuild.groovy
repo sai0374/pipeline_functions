@@ -1,7 +1,8 @@
 #!/usr/bin/env groovy
 def call(){
   sh """
-mvn clean install
+  source /etc/profile.d/maven.sh
+  mvn clean install
 """
 }
 
